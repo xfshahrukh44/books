@@ -53,7 +53,7 @@
                                     @foreach($contact_inquiries as $item)   
                                     <tr>
                                         <td>{{ $item->id }}</td>
-                                        <td>{{ $item->form_name }}</td>
+                                        <td>{{ $item->form_name ?? 'Contact form' }}</td>
                                         <td>{{ $item->fname }}</td>
                                         <td>{{ $item->email }}</td>
                                         <td>{{ $item->notes }}</td>

@@ -36,21 +36,21 @@
                     </li>
                 </ul>
             </li>
-            <!--<li class="nav-item">-->
-            <!--    <a href="javascript:;"><i class="la la-share-alt"></i><span class="menu-title" data-i18n="Dashboard">Inquires</span></a>-->
-            <!--    <ul class="menu-content">-->
-        <!--        <li class="{{ (request()->is('admin/contact/inquiries') || request()->is('admin/contact/inquiries/*')) ? 'active' : '' }}">-->
-        <!--            <a class="menu-item" href="{{url('admin/contact/inquiries')}}"><i></i>-->
-            <!--                <span data-i18n="eCommerce">Contact Inquiries</span>-->
-            <!--        </a>-->
-            <!--        </li>-->
-        <!--        <li class="{{ (request()->is('admin/newsletter/inquiries')) ? 'active' : '' }}">-->
-        <!--            <a class="menu-item" href="{{url('admin/newsletter/inquiries')}}"><i></i>-->
-            <!--                <span data-i18n="Crypto">Newsletter Inquiries</span>-->
-            <!--            </a>-->
-            <!--        </li>-->
-            <!--    </ul>-->
-            <!--</li>-->
+            <li class="nav-item">
+                <a href="javascript:;"><i class="la la-share-alt"></i><span class="menu-title" data-i18n="Dashboard">Inquires</span></a>
+                <ul class="menu-content">
+                <li class="{{ (request()->is('admin/contact/inquiries') || request()->is('admin/contact/inquiries/*')) ? 'active' : '' }}">
+                    <a class="menu-item" href="{{url('admin/contact/inquiries')}}"><i></i>
+                            <span data-i18n="eCommerce">Contact Inquiries</span>
+                    </a>
+                    </li>
+{{--                <li class="{{ (request()->is('admin/newsletter/inquiries')) ? 'active' : '' }}">--}}
+{{--                    <a class="menu-item" href="{{url('admin/newsletter/inquiries')}}"><i></i>--}}
+{{--                            <span data-i18n="Crypto">Newsletter Inquiries</span>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+                </ul>
+            </li>
 
             <li class="nav-item">
                 <a href="javascript:;"><i class="la la-list"></i><span class="menu-title" data-i18n="Dashboard">CMS</span></a>
