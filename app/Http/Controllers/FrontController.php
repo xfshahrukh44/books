@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Inquiry;
+use App\inquiry;
 use App\Models\Bikecheck;
 use App\Models\Book;
 use App\Models\Childsubcategory;
