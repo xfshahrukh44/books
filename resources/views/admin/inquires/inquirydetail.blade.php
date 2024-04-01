@@ -42,7 +42,7 @@
                             <table class="table table-striped table-bordered">
                                 <tbody>
                                     <tr><th>ID</th><td>{{ $inquiry->id }}</td></tr>
-                                    <tr><th>Form Name</th><td>{{ $inquiry->form_name }}</td></tr>
+                                    <tr><th>Form Name</th><td>{{ $inquiry->form_name ?? 'Contact form' }}</td></tr>
                                     <tr><th>First Name </th><td> {{ $inquiry->fname }} </td></tr>
                                     @if( $inquiry->lname != null)
                                     <tr><th> Last Name </th><td> {{ $inquiry->lname }} </td></tr>
