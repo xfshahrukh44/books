@@ -6,12 +6,13 @@
                     <h6>contact us</h6>
                 </div>
                 <div class="side-form">
-                    <form>
+                    <form action="{{route('front.contactSubmit')}}" method="POST">
+                        @csrf
                         <div class="row">
                             <div class="col-6">
                                 <div class="form-group">
                                     <label>Your name </label>
-                                    <input type="text" name="name" class="form-control" id="" required="">
+                                    <input type="text" name="fname" class="form-control" id="" required="">
                                 </div>
                             </div>
                             <div class="col-6">
@@ -34,7 +35,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Message</label>
-                                <textarea name="text" id="textarea" class="form-control" cols="30" rows="8"
+                                <textarea name="notes" id="textarea" class="form-control" cols="30" rows="8"
                                           required=""></textarea>
                             </div>
                             <button class="btn btn-yellow" type="submit">send message</button>
@@ -86,6 +87,17 @@
 
 
 <script src="js/script.js"></script>
+
+<script>
+    $(document).ready(function () {
+        @if(session()->has('success'))
+            toastr.success('{{session()->get('success')}}');
+        @endif
+
+        @if(session()->has('error'))
+            toastr.error('{{session()->get('error')}}'); @endif
+    });
+</script>
 
 
 </body>

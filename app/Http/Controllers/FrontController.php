@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Inquiry;
 use App\Models\Bikecheck;
 use App\Models\Book;
 use App\Models\Childsubcategory;
@@ -75,6 +76,17 @@ class FrontController extends Controller
         $page = DB::table('pages')->where('id', 1)->first();
 
         return view('contact', compact('page'));
+    }
+
+    public function contactSubmit (Request $request)
+    {
+        try {
+            inquiry::create($request->all());
+
+            return redirect()->back()->with('success', 'Thank you for contacting us. We will get back to you asap');
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', $e->getMessage());
+        }
     }
 
     public function notOnMyWatch()

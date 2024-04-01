@@ -202,6 +202,7 @@ Route::get('/books',[FrontController::class, 'books'])->name('front.books');
 Route::get('/book-detail/{id}',[FrontController::class, 'bookDetail'])->name('front.bookDetail');
 Route::get('/cast-the-first-stone',[FrontController::class, 'castTheFirstStone'])->name('front.castTheFirstStone');
 Route::get('/contact',[FrontController::class, 'contact'])->name('front.contact');
+Route::post('/contact-submit',[FrontController::class, 'contactSubmit'])->name('front.contactSubmit');
 Route::get('/not-on-my-watch',[FrontController::class, 'notOnMyWatch'])->name('front.notOnMyWatch');
 Route::get('/reviews',[FrontController::class, 'reviews'])->name('front.reviews');
 Route::get('/yesterday-shadows',[FrontController::class, 'yesterdayShadows'])->name('front.yesterdayShadows');
