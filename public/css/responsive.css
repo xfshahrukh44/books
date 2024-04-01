@@ -1,0 +1,72 @@
+@media (max-width: 1440px) {
+    
+
+.home-about {
+    overflow: hidden;
+    height: 765px;
+}
+
+  .author-web h1 {
+    font-size: 46px;
+  }
+  .signature-side h2 {
+      font-size: 43px;
+  }
+  .signature {
+      height: 650px;
+  }
+  .more-athor.shadow-book {
+      padding-top: 50px;
+  }
+  .more-athor.shadow-book.signature {
+      height: 700px;
+  }
+.more-athor {
+    padding-top: 10px;
+}
+  .author-web p {
+    width: 50%;
+  }
+  .yesterday-shall figure .top-book {
+    width: 47%;
+    right: 1%;
+    top: 12%;
+  }
+
+  .yesterday-shall figure img {
+    width: 50%;
+    right: 2%;
+  }
+
+  .yesterday-shall figure .shine-img {
+    width: 8%;
+    top: 10%;
+  }
+
+  .left-shallow {
+    margin-top: 0;
+  }
+
+  .testimonils {
+    overflow: hidden;
+  }
+
+  .footer-links h6 {
+    font-size: 18px;
+  }
+
+  .main-client p {
+    font-size: 22px;
+    width: 99%;
+  }
+
+  .name-client h6 {
+    font-size: 22px;
+  }
+  .shadow-book .signature img {
+    width: 100%;
+  }
+  .side-form button {
+    width: 30%;
+  }
+}

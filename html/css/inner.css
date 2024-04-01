@@ -1,0 +1,61 @@
+
+/* inner-menu css start */
+header.for-after {
+    position: unset;
+}
+/* inner-menu css end */
+
+
+/* book-page css start */
+.book-sec .signature-side {
+    text-align: start;
+}
+.signature-img {
+    text-align: end;
+}
+.for-inner-book img {
+    width: 90%;   
+}
+/*.book-sec img {*/
+/*    height: 670px;*/
+/*    width: 580px;*/
+/*}*/
+.book-sec .signature-side p {
+    margin: unset;
+    width: 96%;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.book-sec {
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+/* book-page css end */
+
+
+/* inner-book css start */
+.book-sec .signature-side img {
+    margin-bottom: 40px;
+    width: 37%;
+    height: 600px;
+}
+img.for-height {
+    /* width: 50% !important; */
+    height: 500px !important;
+}
+.book-sec h2.col-span {
+    font-size: 55px;
+}
+section.banner-sec {
+    background: linear-gradient(90deg, #e1ad48, #f5ebb4, #e1ad48);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.main-banner h2 {
+    font-size: 55px;
+}
+/* inner-book css end */
