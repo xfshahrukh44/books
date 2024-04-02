@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Traits\HelperTrait;
 use App\inquiry;
 use App\Models\Bikecheck;
 use App\Models\Book;
@@ -21,9 +22,12 @@ use App\Page;
 use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 
 class FrontController extends Controller
 {
+    use HelperTrait;
+
     public function index(Request $request)
     {
 
@@ -82,6 +86,17 @@ class FrontController extends Controller
     {
         try {
             inquiry::create($request->all());
+
+            $emails = [$this->returnFlag(218)];
+            $subject = 'Contact Form Submission';
+            Mail::send('inquirymail', [
+                'username' => $request->fname,
+                'user_email' => $request->email,
+                'note' => $request->notes,
+            ], function ($message) use ($emails, $subject, $request) {
+                $message->from($request->email, 'Contact Form Submission');
+                $message->to($emails)->subject($subject);
+            });
 
             return redirect()->back()->with('success', 'Thank you for contacting us. We will get back to you asap');
         } catch (\Exception $e) {
