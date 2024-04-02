@@ -54,7 +54,7 @@
                                                     <div class="name-client">
                                                         <h6>
                                                             {{$review->author}}
-                                                            <span class="d-block">{{$review->position}}</span>
+{{--                                                            <span class="d-block">{{$review->position}}</span>--}}
                                                         </h6>
                                                     </div>
                                                 </div>

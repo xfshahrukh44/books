@@ -87,7 +87,9 @@
                                         <img src="{{asset('images/21.png')}}" class="img-fluid" alt="">
                                         <p>{{$review->content}}</p>
                                         <div class="name-client">
-                                            <h6>{{$review->author}}<span class="d-block">{{$review->position}}</span></h6>
+                                            <h6>{{$review->author}}
+{{--                                                <span class="d-block">{{$review->position}}</span>--}}
+                                            </h6>
                                         </div>
                                     </div>
                                 </div>
