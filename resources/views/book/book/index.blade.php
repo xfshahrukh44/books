@@ -59,7 +59,7 @@
                                     <td>{{ $item->id }}</td>
                                     <td><img src="{{asset($item->image)}}" alt="" title="" width="150"></td>
                                     <td>{{ $item->title }}</td>
-                                    <td>{{ $item->description }}</td>
+                                    <td>{!! $item->description !!}</td>
                                     <td>
 
                                         
